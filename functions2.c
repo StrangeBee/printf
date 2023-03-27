@@ -24,7 +24,7 @@ int print_pointer(va_list types, char buffer[],
 	UNUSED(size);
 
 	if (addrs == NULL)
-		return (erite(1, "(nil)", 5));
+		return (write(1, "(nil)", 5));
 
 	buffer[BUFF_SIZE - 1] = '\0';
 	UNUSED(precision);
